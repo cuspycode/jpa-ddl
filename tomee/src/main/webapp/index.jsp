@@ -3,7 +3,6 @@
 <%@ page import="com.cuspycode.jpaddl.Bean" %>
 <%@ page import="javax.naming.InitialContext" %>
 <%@ page import="javax.naming.Context" %>
-<%@ page import="javax.persistence.EntityManager" %>
 <%
         Context ctx = new InitialContext();
         Bean bean = (Bean) ctx.lookup("java:global/jpa-ddl-ee/Bean");
