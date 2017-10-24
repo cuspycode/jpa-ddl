@@ -8,7 +8,7 @@ import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
 
 @WebListener
-public class JPALifecycleListener implements ServletContextListener {
+public class ContextListener implements ServletContextListener {
     private static EntityManagerFactory emf;
 
     @Override
