@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tomee>
+
+  <!-- see http://tomee.apache.org/containers-and-resources.html -->
+
+<Resource id="jdbc/JpaDDL" type="DataSource">
+  JdbcDriver org.h2.Driver
+  JdbcUrl jdbc:h2:/opt/tomee/h2_data/jpaddl;DB_CLOSE_ON_EXIT=FALSE
+  JtaManaged true
+</Resource>
+
+<Resource id="jdbc/JpaDDLUnmanaged" type="DataSource">
+  JdbcDriver org.h2.Driver
+  JdbcUrl jdbc:h2:/opt/tomee/h2_data/jpaddl;DB_CLOSE_ON_EXIT=FALSE
+  JtaManaged false
+</Resource>
+
+</tomee>
