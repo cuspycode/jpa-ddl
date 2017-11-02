@@ -9,6 +9,10 @@
 
 	// Add a customer
 	bean.addCustomer("Carol", "carol@example.com");
+
+	// Add a couple of orders
+	bean.addOrder(2, "This is an order");
+	bean.addOrder(2, "This is another order");
 %>
 <html>
 <head><title>JPA-DDL Example</title></head>
@@ -21,7 +25,7 @@
 	    if (x == null) break;
 %>
 <p>
-<%= x.getId() %>, <%= x.getName() %>, <%= x.getEmail() %>
+<%= x.getId() %>, <%= x.getName() %>, <%= x.getEmail() %>, <%= bean.showOrders(x.getOrders()) %>
 </p>
 <%
 	}
